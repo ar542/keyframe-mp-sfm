@@ -349,7 +349,7 @@ Public Class Form1
                 pid = p.Id
                 p.WaitForInputIdle()
 
-                Threading.Thread.Sleep(1000)
+                Threading.Thread.Sleep(300)
 
                 SetParent(p.MainWindowHandle, Panel2.Handle)
                 SendMessage(p.MainWindowHandle, WM_SYSCOMMAND, SC_MAXIMIZE, 0)
