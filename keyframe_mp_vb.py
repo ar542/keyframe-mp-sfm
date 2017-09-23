@@ -39,7 +39,7 @@ class KeyframeMPClient(object):
     PORT = 17174
 
     HEADER_SIZE = 10
-    KEYFRAME_MP_PATH = "C:/Program Files/Keyframe MP 2/bin/keyframe mp container.exe"
+    KEYFRAME_MP_PATH =os.getcwd()+"/workshop/scripts/sfm/mainmenu/keyframe mp/keyframe_mp_v2/keyframe mp container.exe"
     kmp_socket = None
     kmp_initialized = False
 
@@ -75,15 +75,15 @@ class KeyframeMPClient(object):
             application_path = cls.KEYFRAME_MP_PATH
 
         if not application_path:
-            self.error("Keyframe MP application path not set.")
+            cls.error("Keyframe MP application path not set.")
         elif not os.path.exists(application_path):
-            self.error("Keyframe MP application path does not exist: {0}".format(application_path))
+            cls.error("Keyframe MP application path does not exist: {%s}"%(application_path))
         else:
             try:
                 subprocess.Popen(cls.KEYFRAME_MP_PATH, shell=False, stdin=None, stdout=None, stderr=None)
             except:
                 traceback.print_exc()
-                self.error("Failed to open Keyframe MP. See script editor for details.")
+                cls.error("Failed to open Keyframe MP. See script editor for details.")
 
 
 
@@ -446,7 +446,7 @@ shotlist=[]
 sfmoffset=0
 class KeyframeMpSync(QtGui.QMainWindow):
     
-    def vbnet_client(self,cmd):#used to connect to vb.net
+    def vbnet_client(self,cmd):#used to connect to vb.net and send cmds
         
         try:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
@@ -454,6 +454,14 @@ class KeyframeMpSync(QtGui.QMainWindow):
             s.send(str.encode(cmd))
             s.close()
         except socket.error as e:
+            s = subprocess.check_output('tasklist', shell=True) # get list of running Programs
+            if "keyframe mp container.exe " not in s:
+                self.KeyframeMpHelper.disconnect()
+                self.KeyframeMpHelper.open_keyframe_mp()
+                self.KeyframeMpHelper.connect()
+                self.KeyframeMpHelper.initialize() 
+
+                
             print(str(e))
         
     def on_opacity_change(self):
