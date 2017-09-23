@@ -188,6 +188,7 @@ Public Class Form1
             While True
                 Console.Write("Waiting for a connection... ")
                 Me.Invoke(myDelegate, "Waiting for a connection... ")
+                Me.Invoke(myDelegate, "")
 
                 ' Perform a blocking call to accept requests.
                 ' You could also user server.AcceptSocket() here.
@@ -259,6 +260,8 @@ Public Class Form1
 
 
                 End While
+                Me.Invoke(myDelegate, "end connection")
+                Me.Invoke(myDelegate, "")
 
                 ' Shutdown and end connection
                 'client.Close()
@@ -350,7 +353,7 @@ Public Class Form1
                 pid = p.Id
                 p.WaitForInputIdle()
 
-                Threading.Thread.Sleep(300)
+                Threading.Thread.Sleep(500)
 
                 SetParent(p.MainWindowHandle, Panel2.Handle)
                 SendMessage(p.MainWindowHandle, WM_SYSCOMMAND, SC_MAXIMIZE, 0)
@@ -404,7 +407,7 @@ Public Class Form1
     End Sub
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MsgBox("version: 1.3")
+        MsgBox("version: 1.5" + Environment.NewLine + "Author: http://steamcommunity.com/id/OMGTheresABearInMyOatmeal" + Environment.NewLine + "Source: https://github.com/ar542/keyframe-mp-sfm/")
 
     End Sub
 End Class
