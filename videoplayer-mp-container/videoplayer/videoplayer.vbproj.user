@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>C:\Users\AR\Desktop\build\|publish\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory>http://steamcommunity.com/id/OMGTheresABearInMyOatmeal</SupportUrlHistory>
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>C:\Users\AR\Desktop\project3\videoplayer\videoplayer\bin\Debug\MPC-HC.1.7.10\</ReferencePath>
+  </PropertyGroup>
+</Project>
