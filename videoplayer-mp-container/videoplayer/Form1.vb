@@ -65,7 +65,9 @@ Public Class Form1
         '  AsynchronousSocketListener.closeserver()
         'Console.WriteLine(pid)
 
-        If pid > 0 Then
+        If pid > 0 And Not p.HasExited Then
+
+
             p.Kill()
             Console.WriteLine(pid)
         End If
@@ -87,17 +89,16 @@ Public Class Form1
         tcpClientThread.Start()
         System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False
         InitialStyle = GetWindowLong(Me.Handle, User32Wrappers.GWL.ExStyle)
-        Dim strPath As String = System.IO.Path.GetDirectoryName( _
-    System.Reflection.Assembly.GetExecutingAssembly().CodeBase)
+        'Dim strPath As String = System.IO.Path.GetDirectoryName( _ System.Reflection.Assembly.GetExecutingAssembly().CodeBase)
         'Dim p As System.Diagnostics.Process
         Dim pHelp As New ProcessStartInfo
-        strPath = strPath.Substring(6)
+        ' strPath = strPath.Substring(6)
 
-        If (File.Exists(strPath + "\KeyframeMP.exe")) Then
-            pHelp.FileName = strPath + "\KeyframeMP.exe"
+        If (File.Exists("C:/Program Files/Keyframe MP 2/bin/KeyframeMP.exe")) Then
+            pHelp.FileName = "C:/Program Files/Keyframe MP 2/bin/KeyframeMP.exe"
 
         Else
-            MsgBox("KeyframeMP.exe was not found in the current directory.", MsgBoxStyle.OkOnly)
+            MsgBox("KeyframeMP.exe was not found in 'C:/Program Files/Keyframe MP 2/bin/'.", MsgBoxStyle.OkOnly)
             Return
 
         End If
@@ -111,7 +112,7 @@ Public Class Form1
             p.WaitForInputIdle()
             pid = p.Id
 
-            Threading.Thread.Sleep(300)
+            Threading.Thread.Sleep(500)
             SetParent(p.MainWindowHandle, Panel2.Handle)
             SendMessage(p.MainWindowHandle, WM_SYSCOMMAND, SC_MAXIMIZE, 0)
             Me.BringToFront()
