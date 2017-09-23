@@ -93,13 +93,11 @@ Public Class Form1
         Dim pHelp As New ProcessStartInfo
         strPath = strPath.Substring(6)
 
-        If (File.Exists(strPath + "\mpc-hc64.exe")) Then
-            pHelp.FileName = strPath + "\mpc-hc64.exe"
-        ElseIf (File.Exists(strPath + "\mpc-hc.exe")) Then
-            pHelp.FileName = strPath + "\mpc-hc.exe"
+        If (File.Exists(strPath + "\KeyframeMP.exe")) Then
+            pHelp.FileName = strPath + "\KeyframeMP.exe"
 
         Else
-            MsgBox("mpc-hc.exe was not found in the current directory.", MsgBoxStyle.OkOnly)
+            MsgBox("KeyframeMP.exe was not found in the current directory.", MsgBoxStyle.OkOnly)
             Return
 
         End If
@@ -113,7 +111,7 @@ Public Class Form1
             p.WaitForInputIdle()
             pid = p.Id
 
-            Threading.Thread.Sleep(3000)
+            Threading.Thread.Sleep(300)
             SetParent(p.MainWindowHandle, Panel2.Handle)
             SendMessage(p.MainWindowHandle, WM_SYSCOMMAND, SC_MAXIMIZE, 0)
             Me.BringToFront()
