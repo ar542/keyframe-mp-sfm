@@ -348,3 +348,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.suo
