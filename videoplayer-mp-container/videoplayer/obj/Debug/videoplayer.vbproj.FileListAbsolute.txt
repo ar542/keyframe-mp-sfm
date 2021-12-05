@@ -123,3 +123,22 @@ C:\Program Files (x86)\Steam\steamapps\common\SourceFilmmaker\game\workshop\scri
 C:\Program Files (x86)\Steam\steamapps\common\SourceFilmmaker\game\workshop\scripts\sfm\mainmenu\keyframe mp\keyframe_mp_v2\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\videoplayer.vbproj.GenerateResource.Cache
 C:\Program Files (x86)\Steam\steamapps\common\SourceFilmmaker\game\workshop\scripts\sfm\mainmenu\keyframe mp\keyframe_mp_v2\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\keyframe mp container.exe.manifest
 C:\Program Files (x86)\Steam\steamapps\common\SourceFilmmaker\game\workshop\scripts\sfm\mainmenu\keyframe mp\keyframe_mp_v2\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\keyframe mp container.application
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\videoplayer.vbproj.AssemblyReference.cache
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\videoplayer.vbproj.SuggestedBindingRedirects.cache
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\videoplayer.debugwin.resources
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\videoplayer.Form1.resources
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\videoplayer.Resources.resources
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\videoplayer.setportdialog.resources
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\videoplayer.vbproj.GenerateResource.cache
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\videoplayer.vbproj.CoreCompileInputs.cache
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\keyframe mp container.exe
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\keyframe mp container.xml
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\keyframe mp container.pdb
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\bin\Debug\keyframe mp container.exe.config
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\bin\Debug\keyframe mp container.exe.manifest
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\bin\Debug\keyframe mp container.application
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\bin\Debug\keyframe mp container.exe
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\bin\Debug\keyframe mp container.pdb
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\bin\Debug\keyframe mp container.xml
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\keyframe mp container.exe.manifest
+C:\Users\AR\Documents\GitHub\keyframe-mp-sfm\videoplayer-mp-container\videoplayer\obj\Debug\keyframe mp container.application

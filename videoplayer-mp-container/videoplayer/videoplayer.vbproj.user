@@ -14,4 +14,7 @@
   <PropertyGroup>
     <ReferencePath>C:\Users\AR\Desktop\project3\videoplayer\videoplayer\bin\Debug\MPC-HC.1.7.10\</ReferencePath>
   </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
 </Project>

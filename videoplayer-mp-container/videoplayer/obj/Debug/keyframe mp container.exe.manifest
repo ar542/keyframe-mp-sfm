@@ -43,24 +43,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="keyframe mp container.exe" size="104960">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="keyframe mp container.exe" size="97744">
       <assemblyIdentity name="keyframe mp container" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uHVJMFy7IkFjBSnXVmzV0nYFKPrsaERCPIHq+5D1VHI=</dsig:DigestValue>
+        <dsig:DigestValue>u5jWQxJOyUTUDL/3yRygSUEm5Toq3Jmr12w0FEeqX0A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="keyframe mp container.exe.config" size="1031">
+  <file name="keyframe mp container.exe.config" size="1026">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>WaysFJGMhAWlzkME2Mi0JHpZLSRWsZmcBQ7ysYhqwVE=</dsig:DigestValue>
+      <dsig:DigestValue>c9/azS4IMWagG8rBwO7LSysWbWkV1IRd96AxU5kPK4c=</dsig:DigestValue>
     </hash>
   </file>
   <file name="KeyframeMP.ico" size="32038">

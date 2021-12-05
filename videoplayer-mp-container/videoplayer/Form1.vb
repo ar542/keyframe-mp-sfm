@@ -12,7 +12,7 @@ Public Module GlobalVariables
     Public client As New TcpClient
     Public port As Integer = Convert.ToInt16(My.Settings.port_number) 'this is the port number
     Public localAddr As IPAddress = IPAddress.Loopback ' this is the IP address
-    Public server As TcpListener = New TcpListener(localAddr, port)
+    Public server As New TcpListener(localAddr, port)
 
 
 End Module
@@ -26,8 +26,8 @@ Public Class Form1
     Declare Auto Function SendMessage Lib "user32.dll" (ByVal hWnd As IntPtr, ByVal Msg As Integer, ByVal wParam As Integer, ByVal lParam As Integer) As Integer
     Private Const WM_SYSCOMMAND As Integer = 274
     Private Const SC_MAXIMIZE As Integer = 61488
-    Dim tcpClientThread As New System.Threading.Thread(AddressOf lisstion)
-    Dim windowclosing As Boolean = False
+    ReadOnly tcpClientThread As New System.Threading.Thread(AddressOf lisstion)
+    ReadOnly windowclosing As Boolean = False
 
 
 
@@ -112,13 +112,13 @@ Public Class Form1
             p.WaitForInputIdle()
             pid = p.Id
 
-            Threading.Thread.Sleep(500)
+            Threading.Thread.Sleep(2000)
             SetParent(p.MainWindowHandle, Panel2.Handle)
             SendMessage(p.MainWindowHandle, WM_SYSCOMMAND, SC_MAXIMIZE, 0)
             Me.BringToFront()
 
         Catch ex As Exception
-            MsgBox("mpc-hc.exe was not found in the current directory.", MsgBoxStyle.Critical)
+            MsgBox("keyframe mp could not start." + ex.ToString(), MsgBoxStyle.Critical)
             Console.WriteLine(ex)
         End Try
 
@@ -166,7 +166,7 @@ Public Class Form1
 
 
     Delegate Sub UpdateTextBoxDelg(text As String)
-    Public myDelegate As UpdateTextBoxDelg = New UpdateTextBoxDelg(AddressOf UpdateTextBox)
+    Public myDelegate As New UpdateTextBoxDelg(AddressOf UpdateTextBox)
 
     Public Sub UpdateTextBox(text As String)
         debugwin.debugbox.AppendText(text & Environment.NewLine)
@@ -326,7 +326,7 @@ Public Class Form1
 
 
     Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
-        Dim fd As OpenFileDialog = New OpenFileDialog()
+        Dim fd As New OpenFileDialog()
         'Dim strFileName As String
         Dim pHelp As New ProcessStartInfo
         fd.Title = "Open .exe"
